@@ -1,0 +1,173 @@
+:root {
+  --border-radius: 2px;
+  --color-background: #333333;
+  --color-font: white;
+  --color-iconbtn: white;
+  --color-json-boolean: red;         /* @TODO: Review. */
+  --color-json-key:   lightyellow;
+  --color-json-number: #00ff00;      /* @TODO: Review. */
+  --color-json-string: yellow;       /* @TODO: Review. */
+  --font-family: 'Roboto', sans-serif;
+  --font-weight: 300;
+  --font-weight-bold: 500;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-font);
+  font-family: var(--font-family);
+  font-size: medium;
+  font-weight: var(--font-weight);
+  height: 512px;                             /* @TODO: Review. */
+  margin: 0;
+  max-height: 896px;                         /* @TODO: Review. */
+  max-width: 896px;                          /* @TODO: Review. */
+  min-height: 512px;                         /* @TODO: Review. */
+  min-width: 512px;                          /* @TODO: Review. */
+  width: 512px;                              /* @TODO: Review. */
+}
+
+.container {
+  padding: var(--spacing-xs);
+}
+
+.iconbtn {
+  color: var(--color-iconbtn);
+  text-decoration: none;
+}
+
+.iconbtn:hover {
+  filter: brightness(0.75);
+}
+
+.iconbtn * {
+  pointer-events: none;
+}
+
+header, footer {
+  background-color: var(--color-background);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header {
+  top: 0;
+}
+
+header .container {
+  align-items: center;
+  display: flex;
+}
+
+header .logo {
+  display: inline-flex;
+  flex: 0;
+  margin-right: var(--spacing-xs);
+}
+
+header .title {
+  flex: 1;
+}
+
+header .options {
+  flex: 1;
+  text-align: right;
+}
+
+main {
+  margin-bottom: 35px; /* 🐒 patch */
+  margin-top: 48px;    /* 🐒 patch */
+}
+
+main .container {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+}
+
+.tab-list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-list ul li {
+  border: 1px solid gray;
+  border-right-width: 0;
+  cursor: pointer;
+  flex: 0;
+  padding: var(--spacing-sm);
+}
+
+.tab-list ul li:first-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+
+.tab-list ul li:last-child {
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-right-width: 1px;
+}
+
+.tab-list ul li.active {
+  border-bottom: none;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* renderjson */
+
+.renderjson {
+  font-size: large;
+}
+
+.renderjson a {
+  color: var(--color-font);
+  text-decoration: none;
+}
+
+.renderjson .disclosure {
+  color: var(--color-font);
+  filter: brightness(0.5);
+  font-size: x-large;
+  margin-right: var(--spacing-xs)
+}
+
+.renderjson .syntax {
+  color: var(--color-font);
+}
+
+.renderjson .string {
+  color: var(--color-json-string);
+}
+
+.renderjson .number {
+  color: var(--color-json-number);
+}
+
+.renderjson .boolean {
+  color: var(--color-json-boolean);
+}
+
+.renderjson .key {
+  color: var(--color-json-key);
+}
+
+.renderjson .keyword {
+  color: var(--color-font);
+  filter: brightness(0.5);
+}
+
+.renderjson .object.syntax {
+  color: var(--color-font);
+}
+
+.renderjson .array.syntax {
+  color: var(--color-font);
+}

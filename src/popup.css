@@ -114,7 +114,8 @@ main .container {
 }
 
 .tab-list ul li.active {
-  border-bottom: none;
+  background-color: var(--color-font);
+  color: var(--color-background);
 }
 
 footer {

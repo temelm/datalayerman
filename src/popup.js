@@ -45,3 +45,4 @@ renderjson?.set_icons('▸', '▾')
 renderjson?.set_show_to_level('all')
 
 dPopup.domMainContainer.appendChild(dUtils.createTabList())
+dUtils.handleTabClick()

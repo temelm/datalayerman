@@ -1,23 +1,28 @@
 {
   "name": "datalayerman",
   "version": "1.0.0",
-  "description": "@TODO",
-  "main": "src/manifest.json",
+  "description": "@todo",
   "scripts": {
-    "build": "./node_modules/gulp/bin/gulp.js build",
-    "watch": "./node_modules/gulp/bin/gulp.js watch"
+    "clean": "rimraf -rf dist .parcel-cache",
+    "build": "parcel build src/manifest.json --no-source-maps --no-cache",
+    "cleanbuild": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/temelm/datalayerman.git"
   },
   "keywords": [
-    "@TODO"
+    "@todo"
   ],
   "author": "Mustafa Temel",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/temelm/datalayerman/issues"
   },
-  "homepage": "https://github.com/temelm/datalayerman#readme"
+  "homepage": "https://github.com/temelm/datalayerman#readme",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.11.0",
+    "parcel": "^2.11.0",
+    "rimraf": "^5.0.5"
+  }
 }

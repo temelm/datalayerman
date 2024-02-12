@@ -4,7 +4,7 @@
   "description": "@todo",
   "scripts": {
     "clean": "rimraf dist .parcel-cache",
-    "build": "parcel build src/manifest.json --no-source-maps --no-cache",
+    "build": "parcel build src/manifest.json src/options.html --no-source-maps --no-cache",
     "cleanbuild": "npm run clean && npm run build"
   },
   "repository": {

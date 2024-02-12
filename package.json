@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "@todo",
   "scripts": {
-    "clean": "rimraf -rf dist .parcel-cache",
+    "clean": "rimraf dist .parcel-cache",
     "build": "parcel build src/manifest.json --no-source-maps --no-cache",
     "cleanbuild": "npm run clean && npm run build"
   },

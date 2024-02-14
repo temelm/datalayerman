@@ -1,5 +1,1 @@
-chrome.devtools.panels.create(
-  'Datalayerman',
-  null,
-  './panel.html',
-);
+chrome.devtools.panels.create('Datalayerman', null, './panel.html');

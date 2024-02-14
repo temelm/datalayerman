@@ -1,0 +1,31 @@
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  cursor: pointer;
+  padding: var(--space-sm) var(--space-md);
+  transition: filter var(--transition-duration) var(--transition-timing-function);
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(110%);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.button.icon-button {
+  padding: var(--space-xs);
+}
+
+.button:has(i, span) {
+  align-items: center;
+  display: inline-flex;
+}
+
+.button:has(i, span) span {
+  margin-left: var(--space-sm);
+}

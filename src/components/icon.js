@@ -14,5 +14,5 @@ export function createIcon (name, returnAsString = false) {
   const domIcon = document.createElement('i');
   name.split(' ').forEach((className) => domIcon.classList.add(className));
 
-  return returnAsString ? domIcon.outerHTML : domIcon;
+  return (returnAsString === true) ? domIcon.outerHTML : domIcon;
 }

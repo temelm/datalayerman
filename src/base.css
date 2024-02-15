@@ -56,12 +56,12 @@ input[type="text"] {
   transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
-input[type="text"]:focus {
-  border-color: var(--primary-color);
-  outline: none;
-}
-
 input[type="text"]::placeholder {
   color: var(--border-color);
   opacity: 0.5;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }

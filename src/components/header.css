@@ -26,6 +26,6 @@ nav * {
   justify-content: flex-end;
 }
 
-.button {
+nav .button {
   margin-left: var(--space-sm);
 }
